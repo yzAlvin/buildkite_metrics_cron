@@ -1,5 +1,6 @@
 {
   "name": "buildkite_metrics_cron",
+  "type": "module",
   "version": "1.0.0",
   "description": "Pull Buildkite metrics on a schedule",
   "main": "index.js",
