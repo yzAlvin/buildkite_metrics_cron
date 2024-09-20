@@ -1,5 +1,4 @@
 const BuildkiteClient = {
-  getPipelineMetrics: async () => queryBuildkite(makeGraphQLQuery(pipelineMetricsQuery)),
   getSinglePipelineMetrics: async (slug) => queryBuildkite(makeGraphQLQuery(singlePipelineMetricsQuery(slug))),
 }
 
