@@ -1,6 +1,6 @@
-const { BuildkiteClient } = require('./buildkite_client')
-const { pipelines } = require('./pipelines')
-const { objToCsvRow, objToCsvHeader } = require('./utils')
+import BuildkiteClient from './buildkite_client.js'
+import pipelines from './pipelines.js'
+import { objToCsvRow, objToCsvHeader } from './utils.js'
 
 async function main() {
     const pipelineSlugs = pipelines

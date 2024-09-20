@@ -50,4 +50,4 @@ async function queryBuildkite (query) {
   return responseJSON
 }
 
-exports.BuildkiteClient = BuildkiteClient;
+export default BuildkiteClient

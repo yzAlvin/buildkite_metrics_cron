@@ -31,4 +31,5 @@ const pipelines = [
     ]
   },
 ]
-exports.pipelines = pipelines;
+
+export default pipelines
