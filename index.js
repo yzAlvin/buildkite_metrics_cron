@@ -13,7 +13,6 @@ async function main() {
     const data = (await Promise.all(
         pipelineSlugs.map(async (slug) => {
             const { data } = await BuildkiteClient.getSinglePipelineMetrics(slug)
-            console.log(data)
 
                 return data.pipeline.metrics.edges.map(({node}) =>
             ({slug: slug, metric_label: node.label, metric_value: node.value, created_at: dateNow()})

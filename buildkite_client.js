@@ -4,7 +4,6 @@ const BuildkiteClient = {
 
 const graphQLEndpoint = 'https://graphql.buildkite.com/v1'
 const organisationSlug = process.env.ORGANISATION_SLUG
-console.log(organisationSlug)
 
 const graphQLQuery = JSON.stringify({
   query: "{ viewer { user { name } } }",
