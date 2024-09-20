@@ -1,6 +1,6 @@
 import BuildkiteClient from './buildkite_client.js'
 import pipelines from './pipelines.js'
-import { objToCsvRow, objToCsvHeader } from './utils.js'
+import { dateNow, objToCsvRow, objToCsvHeader } from './utils.js'
 
 async function main() {
     const pipelineSlugs = pipelines
